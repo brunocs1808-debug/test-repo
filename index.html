@@ -3,62 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Projeto Web</title>
+    <title>Meu Portfólio de Desenvolvimento</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0d1117;
+            color: #c9d1d9;
             margin: 0;
             padding: 20px;
         }
         header {
-            background-color: #0d1117;
-            color: white;
-            padding: 15px;
+            background-color: #161b22;
+            color: #58a6ff;
+            padding: 25px;
             text-align: center;
-            border-radius: 5px;
+            border-radius: 6px;
+            border: 1px solid #30363d;
         }
         main {
-            background: white;
+            background: #161b22;
             padding: 20px;
             margin-top: 15px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 6px;
+            border: 1px solid #30363d;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+        h2 {
+            color: #58a6ff;
+            border-bottom: 1px solid #30363d;
+            padding-bottom: 8px;
+        }
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .card {
+            background-color: #21262d;
+            padding: 15px;
+            border-radius: 6px;
+            border: 1px solid #30363d;
         }
         .btn {
-            background-color: #2ea44f;
+            background-color: #238636;
             color: white;
-            padding: 10px 15px;
+            padding: 10px 20px;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 6px;
             display: inline-block;
-            margin-top: 10px;
+            margin-top: 15px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .btn:hover {
+            background-color: #2ea44f;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Bem-vindo ao Meu Repositório</h1>
+        <h1>Meu Portfólio Tech</h1>
+        <p>Full Stack Developer em constante evolução</p>
     </header>
 
     <main>
-        <h2>Estrutura Básica de Tags</h2>
-        <p>Este é um parágrafo simples em HTML. Você pode usar esta estrutura para testar novos códigos, criar interfaces ou até subir arquivos reais para validar seus repositórios.</p>
+        <h2>Meus Principais Projetos</h2>
+        <p>Abaixo estão algumas das tecnologias e arquiteturas que domino no desenvolvimento de aplicações modernas e escaláveis:</p>
         
-        <ul>
-            <li><strong>HTML:</strong> Estrutura da página.</li>
-            <li><strong>CSS:</strong> Estilização e design.</li>
-            <li><strong>JavaScript:</strong> Comportamento e lógica.</li>
-        </ul>
+        <div class="project-grid">
+            <div class="card">
+                <h3>Frontend</h3>
+                <p>Criação de interfaces dinâmicas, responsivas e limpas utilizando React, HTML5 e CSS3.</p>
+            </div>
+            <div class="card">
+                <h3>Backend</h3>
+                <p>Construção de APIs robustas e eficientes utilizando Node.js e Java com Spring Boot.</p>
+            </div>
+        </div>
 
-        <a href="#" class="btn">Clique Aqui</a>
+        <button class="btn" onclick="mostrarMensagem()">Verificar Status</button>
     </main>
 
-    <footer style="text-align: center; margin-top: 30px; font-size: 0.9em; color: #666;">
-        <p>&copy; 2026 - Desenvolvido com HTML5</p>
+    <footer style="text-align: center; margin-top: 40px; font-size: 0.9em; color: #8b949e;">
+        <p>&copy; 2026 - Desenvolvido com foco e código limpo</p>
     </footer>
+
+    <script>
+        function mostrarMensagem() {
+            alert("🚀 Sistema online e pronto para novas Pull Requests!");
+        }
+    </script>
 
 </body>
 </html>
